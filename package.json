@@ -1,0 +1,21 @@
+{
+  "name": "thmeme",
+  "version": "1.0.0",
+  "description": "thmeme  ",
+  "repository": "",
+  "scripts": {
+    "build-scss": "node-sass --include-path scss scss/style.scss scss/style.css",
+    "watch-scss": "nodemon -e scss -x \"npm run build-scss\"",
+    "min-scss": "cleancss -o scss/style.min.css scss/style.css",
+    "build-sass": "node-sass  sass/style.sass sass/style.css",
+    "watch-sass": "nodemon -e sass -x \"npm run build-sass\"",
+    "min-sass": "cleancss -o sass/style.min.css sass/style.css",
+    "build-less": "lessc less/style.less less/style.css",
+    "watch-less": "nodemon -e less -x \"npm run build-less\"",
+    "min-less": "lessc --clean-css less/style.less less/style.min.css"
+  },
+  "dependencies": {
+    "clean-css": "^3.4.20"
+  },
+  "devDependencies": {}
+}
